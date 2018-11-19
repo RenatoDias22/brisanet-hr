@@ -50,17 +50,14 @@ const routes: Routes = [{
 // }];
 
 children: [{
-  path: 'dashboard',
-  component: ECommerceComponent,
-}, {
-  path: 'forms',
-  loadChildren: './forms/forms.module#FormsModule',
-}, {
+    path: 'list',
+    loadChildren: './list/tables.module#TablesModule',
+  }, {
   path: 'new-curriculo',
   loadChildren: './new-curriculo/forms.module#FormsModule',
 }, {
   path: '',
-  redirectTo: 'dashboard',
+  redirectTo: 'list',
   pathMatch: 'full',
 }, {
   path: '**',

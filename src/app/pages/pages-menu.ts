@@ -178,12 +178,15 @@ export const MENU_ITEMS: NbMenuItem[] = [
   //     },
   //   ],
   // },
-
   {
-    title: 'E-commerce',
-    icon: 'nb-e-commerce',
-    link: '/pages/dashboard',
-    home: true,
+    title: 'Lista',
+    icon: 'nb-tables',
+    children: [
+      {
+        title: 'Ususarios',
+        link: '/pages/list/users',
+      },
+    ],
   },
   {
     title: 'Cadastar',
@@ -193,20 +196,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
         title: 'Curriculo',
         link: '/pages/new-curriculo/cadastro',
       }
-    ],
-  },
-  {
-    title: 'Forms',
-    icon: 'nb-compose',
-    children: [
-      {
-        title: 'Form Inputs',
-        link: '/pages/forms/inputs',
-      },
-      {
-        title: 'Form Layouts',
-        link: '/pages/forms/layouts',
-      },
     ],
   }
 ];
