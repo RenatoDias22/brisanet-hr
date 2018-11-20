@@ -197,5 +197,15 @@ export const MENU_ITEMS: NbMenuItem[] = [
         link: '/pages/new-curriculo/cadastro',
       }
     ],
-  }
+  },
+  {
+      title: 'Auth',
+      icon: 'nb-locked',
+      children: [
+        {
+          title: 'Login',
+          link: '/auth/login',
+        }
+      ]
+    }
 ];

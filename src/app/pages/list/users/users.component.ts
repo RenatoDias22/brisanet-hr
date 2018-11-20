@@ -35,11 +35,11 @@ export class UsersComponent {
         type: 'number',
       },
       firstName: {
-        title: 'First Name',
+        title: 'Nome',
         type: 'string',
       },
       lastName: {
-        title: 'Last Name',
+        title: 'Sobrename',
         type: 'string',
       },
       username: {
@@ -51,8 +51,16 @@ export class UsersComponent {
         type: 'string',
       },
       age: {
-        title: 'Age',
+        title: 'Idade',
         type: 'number',
+      },
+      status: {
+        title: 'Status',
+        type: 'string',
+      },
+      data: {
+        title: 'Data de Aprovação',
+        type: 'Date',
       },
     },
   };
